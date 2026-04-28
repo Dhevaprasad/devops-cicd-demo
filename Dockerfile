@@ -1,5 +1,8 @@
-FROM python:3.9-slim
+FROM python:3.9
 
-COPY app.py /app.py
+WORKDIR /app
+COPY . .
 
-CMD ["python3", "/app.py"]
+RUN pip install pytest
+
+CMD ["python3", "app.py"]
