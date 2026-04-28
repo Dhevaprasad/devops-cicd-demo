@@ -1,1 +1,8 @@
-print("CI/CD Pipeline Running 🚀")
+print ("Starting application..")
+
+def add(a, b):
+  return a+b
+
+result =add(5, 3)
+print ("Result:", result)
+
